@@ -1,0 +1,28 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<!-- version, description, change-notes and idea-version are patched by the IntelliJ Platform Gradle Plugin -->
+<idea-plugin>
+    <id>TabSwitchExtreme</id>
+    <name>Tab Switcher Extreme</name>
+    <vendor email="carmartifer@outlook.es" url="https://github.com/carmartifer">Carlos M.</vendor>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationConfigurable
+            parentId="tools"
+            instance="io.github.carlosm.tabswitcherextreme.Configuration"
+            id="io.github.carlosm.tabswitcherextreme.Configuration"
+            displayName="Tab Switcher Extreme"/>
+    </extensions>
+
+    <actions>
+        <action
+            id="TabSwitcherExtreme.NextTab"
+            class="io.github.carlosm.tabswitcherextreme.NextTabAction"
+            text="Switch To Next Tab..."
+            description="Show the open files grouped in regex-based lists and switch between them">
+            <keyboard-shortcut first-keystroke="alt A" keymap="$default"/>
+        </action>
+    </actions>
+
+</idea-plugin>

@@ -1,0 +1,21 @@
+# Gradle
+.gradle
+.kotlin
+.intellijPlatform
+build
+
+# IDE
+.idea
+*.iml
+*.ipr
+*.iws
+out
+.qodana
+
+# Junie (agent plans and settings)
+.junie
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
